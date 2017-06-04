@@ -36,6 +36,7 @@ if ( ! class_exists( 'WordPress_Web_Composer' ) ):
 			$this->web_composer         = new Composer();
 			$this->id                   = $id;
 			$this->run_separate_request = $run_separate_request;
+			$this->set_default_upload_dir();
 			if ( $this->run_separate_request ) {
 				$this->action = "web-composer-install_{$this->id}";
 				$this->setup_hooks();
