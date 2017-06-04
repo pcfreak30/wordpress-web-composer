@@ -1,0 +1,29 @@
+---
+engines:
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+      - javascript
+      - python
+      - php
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  phpmd:
+    enabled: true
+    config:
+      rulesets: "cleancode,codesize,design,naming,unusedcode"
+  phpcodesniffer:
+    enabled: true
+    config:
+      standard: WordPress-Core
+ratings:
+  paths:
+  - "**.php"
+exclude_paths:
+- web-composer/

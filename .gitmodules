@@ -1,0 +1,3 @@
+[submodule "web-composer"]
+	path = web-composer
+	url = https://github.com/pcfreak30/web-composer
